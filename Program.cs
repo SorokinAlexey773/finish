@@ -2,13 +2,17 @@
 string[] arr2 = {"1234", "1567", "-2", "computer science"};
 string[] arr3 = { "Russia", "Denmark", "Kazan" };
 int MaxLatterInWord = 3;
+PrintRezult(arr1);
+PrintRezult(arr2);
+PrintRezult(arr3);
+
 string[] GetLatter(string[] array)
 {
-    int length = array.Length;
-    string[] result = new string[length];
+    int size = array.Length;
+    string[] result = new string[size];
     int count = 0;
 
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < size; i++)
     {
         if (array[i].Length <= MaxLatterInWord)
         {
@@ -43,7 +47,4 @@ void PrintRezult(string[] array)
     Console.WriteLine();
 }
 
-PrintRezult(arr1);
-PrintRezult(arr2);
-PrintRezult(arr3);
 
